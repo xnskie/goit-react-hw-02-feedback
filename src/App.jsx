@@ -42,7 +42,7 @@ class App extends Component {
         />
 
         {!isShowStatistics && <Notification message="No feedback given" />}
-
+        
         {isShowStatistics && (
           <Section>
             <Title>Statistics:</Title>
