@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
   /* padding: 50px; */
-  padding: 100px;
+  padding: 50px;
   text-align: center;
 `;
 
@@ -16,9 +16,9 @@ export const Title = styled.h2`
 export const Button = styled.button`
   width: 100px;
   height: 40px;
-  background-color: #333340;
+  background-color: #892000;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   outline: none;
   cursor: pointer;
