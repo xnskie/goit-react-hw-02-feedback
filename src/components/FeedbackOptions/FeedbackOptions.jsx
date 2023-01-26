@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { Container, Title, List, Button } from './FeedbackOptions.styled';
