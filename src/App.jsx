@@ -41,9 +41,18 @@ class App extends Component {
           onLeaveFeedback={this.leaveFeedback}
         />
 
-        {!isShowStatistics && <Notification message="No feedback given" />}
+        {!isShowStatistics ? <Notification message="No feedback given" /> : <Section>
+            <Title>Statistics:</Title>
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={this.totalFeedback()}
+              positivePercentage={this.positiveFeedbackPercentage()}
+            />
+          </Section>}
         
-        {isShowStatistics && (
+        {/* {isShowStatistics && (
           <Section>
             <Title>Statistics:</Title>
             <Statistics
@@ -54,7 +63,7 @@ class App extends Component {
               positivePercentage={this.positiveFeedbackPercentage()}
             />
           </Section>
-        )}
+        )} */}
       </>
     );
   }

@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Container, Title, List, Button } from './FeedbackOptions.styled';
 
-class FeedbackOptions extends Component {
-  render() {
-      const { options, onLeaveFeedback } = this.props;
-      
+// render() {
+//   const { options, onLeaveFeedback } = this.props;
+const FeedbackOptions = ({options, onLeaveFeedback}) => {
     return (
       <Container>
         <Title>Please leave feedback</Title>
@@ -22,14 +21,11 @@ class FeedbackOptions extends Component {
       </Container>
     );
   }
-}
+
 
 export default FeedbackOptions;
 
-FeedbackOptions.propType = {
-  options: PropTypes.arrayOf(
-    PropTypes.exact({
-      option: PropTypes.string.isRequired,
-    })
-  ),
+FeedbackOptions.protoType = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.string.isRequired
 };
